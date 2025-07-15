@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Multiplayer Truth or Dare</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>🎉 Multiplayer Truth or Dare</h1>
+
+  <div class="input-area" id="setup">
+    <input type="text" id="playerInput" placeholder="Enter player name" />
+    <button onclick="addPlayer()">Add Player</button>
+    <br/>
+    <button onclick="startGame()">Start Game</button>
+    <div id="playersList"></div>
+  </div>
+
+  <div class="game-area" id="game" style="display:none;">
+    <h2 id="currentPlayer"></h2>
+    <button onclick="play('truth')">Truth</button>
+    <button onclick="play('dare')">Dare</button>
+    <div class="result" id="resultText"></div>
+    <button onclick="nextPlayer()">Next Player 🔄</button>
+    <br><br>
+    <button onclick="restartGame()">🔁 Restart Game</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
